@@ -55,3 +55,9 @@ The initial steps of this project were giving MyManga basic CRUD operations. The
   <li>Debugging: isolating code to determine where issues stem from, testing multiple options to complete the task, communicating with a team to find best solution.</li>
 </ul>
 
+<h4 id="challenges">Challenges</h4>
+<ul>
+<li>Advanced coding conepts such as datascraping and API were unknown to me at the start of this project. There was definitley pressure having to teach myself these concepts in a timely manner for the first time. Utilizing online resources, our communication platform, and other developers/project instructors helped me overcome this challenge.</li>
+<li>Developing a web application of this size and complexity was a first for me. Taking the time to map out how I wanted my pages to look and functionality required to accomplish tasks, I was able to break things down into simple steps completeing one at a time returning desired results.</li>
+</ul>
+
