@@ -7,16 +7,15 @@ The initial steps of this project were giving MyManga basic CRUD operations. The
 <h3>Project Stories</h3>
 <ol>
   <li><a href="#crud">CRUD</a></li>
-  <li><a href="ds">Data Scraping</a></li>
-  <li><a href="api">API</a></li>
-  <li><a href="fe">Front End</a></li>
-  <li><a href="as">Additional Skills</a></li>
+  <li><a href="#ds">Data Scraping</a></li>
+  <li><a href="#api">API</a></li>
+  <li><a href="#fe">Front End</a></li>
+  <li><a href="#as">Additional Skills</a></li>
 </ol>
   
 <h4 id="crud">Create Record:</h4>
 <p>Created a form for user to insert information into database based upon object model. User has the ability to save, save and add another, and cancel returning to home page.</p>
 <img src="code_snippets/code1.PNG">
-<img src="">
 
 <h4>Read</h4>
 <p>To "read" database objects I utlized bootstrap cards. Using a for loop to scan through the db, the relevent data displays on card. Buttons for update and delete functionality. </p>
