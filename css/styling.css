@@ -1,0 +1,556 @@
+/* GENERAL STYLING */
+* {
+    margin: 0;
+}
+
+p {
+    color: white;
+    font-family: "Farsan";
+    font-size: 2.5em;
+    text-align: center;
+}
+
+p:hover {
+    color: red;
+}
+
+.page_title {
+    color: #ff2b2b;
+    font-family: "Bangers";
+    font-size: 6em;
+    letter-spacing: 2px;
+    text-align: center;
+    transition: 0.3s;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 1), 8px 8px 12px rgba(0,0,0,1);
+}
+
+.page_title:hover {
+    color: black;
+    text-shadow: none;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: red;
+}
+
+.main_title {
+    padding-bottom: 20px;
+    color: white;
+    font-family:"Bangers";
+    font-size: 4em;
+    letter-spacing: 2px;
+    text-align: center;
+    transition: 0.3s;
+    text-shadow: 3px 3px 10px rgba(255, 0, 0, 1), 8px 8px 12px rgba(255, 0, 0, 1);
+}
+
+.main_title:hover {
+    color: red;
+    text-shadow: none;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+}
+
+.confirm_title {
+    color: black;
+    letter-spacing: 2px;
+    font-family: "Bangers";
+    font-size: 3em;
+    text-align: center;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: red;
+}
+
+.bg_img {
+    background-color: black;
+    background-image: url('/static/images/bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* NAVBAR STYLING */
+.page_navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  z-index: 1000;
+}
+
+/* navbar button */
+.page_navbar a{
+    display: inline-block;
+    float: left;
+    color: red;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: "Farsan";
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+    -webkit-transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+/* navbar button hover */
+.page_navbar a:hover {
+    color: black;
+    background-color: red;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: opacity 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+/* HEADER STYLING */
+.page_header {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+/* MAIN STYLING */
+.main {
+    margin-bottom: 7vw;
+    padding-top: 5VW;
+    padding-bottom: 6vw;
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+}
+
+/* index container styling */
+.index_container {
+  border-top-left-radius: 37px 140px;
+  border-top-right-radius: 23px 130px;
+  border-bottom-left-radius: 110px 19px;
+  border-bottom-right-radius: 120px 24px;
+
+  display: block;
+  position: relative;
+  border: solid 3px #a69696;
+  padding: 30px 50px;
+  max-width: 800px;
+  width: 70%;
+  margin: auto;
+  line-height: 40px;
+  transform: rotate(-1deg);
+  box-shadow: 3px 15px 8px -10px rgba(255, 0, 0, 0.3);
+  transition: all 0.13s ease-in;
+}
+
+.index_container:hover {
+  transform: translateY(-10px) rotate(1deg);
+  box-shadow: 3px 15px 8px -10px rgba(255, 0, 0, 0.3);
+}
+
+.index-container:hover .border {
+  transform: translateY(4px) rotate(-5deg);
+}
+
+.border {
+  position: absolute;
+  transition: all 0.13s ease-in;
+}
+
+.tl {
+  position: absolute;
+  left: -50px;
+  top: -63px;
+  font-weight: 600;
+}
+
+.tl:before {
+  content: "37px";
+  left: 120px;
+  top: 30px;
+}
+
+.tl:after {
+  content: "140px";
+  left: 0px;
+  top: 80px;
+}
+
+.tr {
+  right: -50px;
+  top: -63px;
+  font-weight: 600;
+}
+
+.tr:before {
+  content: "23px";
+  left: 0;
+  top: 30px;
+}
+
+.tr:after {
+  content: "130px";
+  left: 130px;
+  top: 80px;
+}
+
+.bl {
+  left: -50px;
+  bottom: -71px;
+  font-weight: 600;
+}
+
+.bl:before {
+  content: "110px";
+  left: 120px;
+  top: -30px;
+}
+
+.bl:after {
+  content: "19px";
+  left: 0px;
+  top: -90px;
+}
+
+.br {
+  right: -50px;
+  bottom: -63px;
+  font-weight: 600;
+}
+
+.br:before {
+  content: "120px";
+  left: 0;
+  top: -30px;
+}
+
+.br:after {
+  content: "24px";
+  right: -10px;
+  top: -80px;
+}
+
+/* FORM STYLING */
+/* create record user panel */
+.user_panel {
+    width: 50%;
+    margin:  2% auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #9B9B9B;
+    border: 2px solid black;
+    transition: 0.3s;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 1), 10px 10px 10px 3px rgba(255, 0, 0, 1)
+}
+
+.user_panel:hover {
+    box-shadow: none;
+}
+
+.form_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_column {
+    flex-basis: calc(50% - 10px);
+    box-sizing: border-box;
+}
+
+.form_row {
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+select,
+input,
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 1);
+}
+
+select:hover,
+input:hover,
+textarea:hover {
+     box-shadow: 0 0 #333;
+}
+
+.search_field {
+    width: 50%;
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-family: "Farsan";
+    font-weight: bold;
+    color: black;
+    font-size: 1.5em;
+}
+
+.btn_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 95%;
+    margin-top: 15px;
+}
+
+.myBtn {
+    text-decoration: none;
+    color: white;
+    font-family: 'Farsan';
+    font-size: 18px;
+    border-radius: 5px;
+    width: 200px;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 5px 5px 0px 0px rgba(5, 5, 5, 1);
+    background-color: red;
+}
+
+.myBtn:hover {
+    color: red;
+    background-color: black;
+    box-shadow: 0 0 #333;
+}
+
+
+/* update record panel */
+#update_panel {
+    width: 50%;
+    margin-bottom: 5vw;
+}
+
+#update_container {
+    display: flex;
+}
+
+/* updateBtn_container */
+#updateBtn_container{
+    width 50%;
+}
+
+#upBtn {
+    background-color: #9b9b9b;
+    margin-bottom: 10px;
+}
+
+#upBtn:hover {
+    background-color: black;
+}
+
+#canBtn {
+    background-color: black
+    box-shadow: 5px 5px 0px 0px rgba(255, 0, 0, 1);
+}
+
+/* sorting container styling */
+.sort_container {
+    margin: auto;
+    text-align: center;
+}
+
+.sort_btn {
+    background-color: red;
+    color: #fff;
+    border: none;
+    margin: 10px;
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "Bangers";
+    font-size: 3vw;
+    border: 2px solid black;
+    transition: 0.3s;
+    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 1)
+}
+
+.sort_btn:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid red;
+    box-shadow: none;
+}
+
+.search_container {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+/* CARD STYLING */
+.card-container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-right: 1vw;
+  padding-left: 1vw;
+  color: black;
+}
+
+.card {
+    width: 18rem;
+    overflow: hidden; /* This will hide any content that overflows the container */
+    margin: 10px 7px 10px 7px;
+    transition: 0.3s;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 1), 10px 10px 5px 2px rgba(155, 0155, 155, 1);
+}
+
+.card:hover {
+    box-shadow: none;
+}
+
+.card-img-top {
+    transition: transform 0.3s;
+    max-width: 100%;
+}
+
+.card-img-top:hover {
+    transform: scale(1.1);
+}
+
+.card_title {
+    color: black;
+    font-family: "Bangers";
+}
+
+.card_author {
+    font-family: "Farsan";
+    font-size: 20px;
+}
+
+#card_1, #card_2, #card_3 {
+    font-family: "Farsan";
+    font-size: 20px;
+}
+
+/* FOOTER STYLING */
+.page_footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: red; /* Adjust as needed */
+  color: black;
+  z-index: 1000; /* Set a high z-index to ensure it's above the cards */
+}
+
+.page_footer p {
+    padding: 10px 20px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+}
+
+/* SCRAPE IMAGES */
+.scrape_img {
+    height: 350px;
+    padding: 5px;
+}
+
+/* API STYLING */
+#list_container {
+    margin: 0 auto;
+    padding: 10%px;
+    width: 50%;
+    font-family: "Farsan";
+    font-size: 2vw;
+}
+
+.list_title {
+    font-family: "Bangers";
+    color: red;
+    text-align: center;
+    font-size: 2em;
+}
+
+.manga_list {
+    padding: 25px;
+}
+
+ol {
+    font-family: "Farsan";
+    counter-reset: li;
+    list-style: none;
+    padding: 0;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+ol a {
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em .8em;
+    margin: .5em 0 .5em 2.5em;
+    background: white;
+    color: #444;
+    text-decoration: none;
+    transition: all .3s ease-out;
+    border-radius: 5px;
+    box-shadow: 5px 5px 3px 0 rgba(255, 0, 0, .5);
+}
+
+ol a:hover {
+    background: #DCDDE1;
+    box-shadow: none;
+    color: red;
+}
+
+ol a:before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -2.5em;
+    top: 50%;
+    margin-top: -1em;
+    background: #9B9B9B;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+ol a:after {
+    position: absolute;
+    content: "";
+    border: .5em solid transparent;
+    left: -1em;
+    top: 50%;
+    margin-top: -.5em;
+    transition: all .3s ease-out;
+}
+
+ol a:hover:after {
+    left: -.5em;
+    border-left-color: #FF0000;
+}
+
+.manga_synopsis {
+    padding: 20px;
+    border: 2px solid white;
+}
+
+.synopsis_title {
+    font-family: "Bangers";
+    font-size: 20px;
+    color: red;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+#synopsis {
+    font-size:20px;
+    text-shadow: none;
+    pointer-events:none;
+}
+
+
+

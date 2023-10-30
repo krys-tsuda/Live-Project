@@ -6,13 +6,14 @@ The initial steps of this project were giving MyManga basic CRUD operations. The
 
 <h3>Project Stories</h3>
 <ol>
-  <li><a href="">CRUD</a></li>
-  <li><a href="">Data Scraping</a></li>
-  <li><a href="">API</a></li>
-  <li><a href="">Front End</a></li>
+  <li><a href="#crud">CRUD</a></li>
+  <li><a href="ds">Data Scraping</a></li>
+  <li><a href="api">API</a></li>
+  <li><a href="fe">Front End</a></li>
+  <li><a href="as">Additional Skills</a></li>
 </ol>
   
-<h4>Create Record:</h4>
+<h4 id="crud">Create Record:</h4>
 <p>Created a form for user to insert information into database based upon object model. User has the ability to save, save and add another, and cancel returning to home page.</p>
 <img src="code_snippets/code1.PNG">
 <img src="">
@@ -25,30 +26,30 @@ The initial steps of this project were giving MyManga basic CRUD operations. The
 <p>Update button renders a details page where user can update database object. Using pk to display info from card that called funtion. The delete function initiates the confirm delete function ensuring the user doesn't accidentaly delete from the db. On successful deleteing user is returned to collection page.</p>
 <img src="code_snippets/code2.PNG">
 
-<h4>Data Scraping</h4>
+<h4 id="ds">Data Scraping</h4>
 <p>Using BeautifulSoup to datascrape, I requested anilists webpage and parsed throgh the raw HTML. From the data I pulled objects with attributes class 'image' and created a dictionary with key 'source' containing object URLs.. I then linked and displayed on an HTML page.</p>
-<img src="code_snippets/code5">
+<img src="code_snippets/code5.PNG">
 
-<h4>API</h4>
+<h4 id="api">API</h4>
 <p>This function requests the URL for chosen API by selected category. Based upon the paramaters, JSON response is stored in object manga_data.</p>
-<img src="code_snippets/code6">
+<img src="code_snippets/code6.PNG">
 <p>If there's data it's extracted into manga_list. For each manga (matching our paramaters), the corresponding attribute 'synopsis' is also pulled and stored. Error handling if there is no synopsis or manga data. Information is then rendered to linked HTML page.</p>
-<img src="code_snippets/code7">
+<img src="code_snippets/code7.PNG">
 <p>On the front-end I created a drop down menu for user to search API based on category. Results will then be displayed on a list. If the user clicks on list item corresponding synopsis is displayed.</p>
-<img src="code_snippets/code9">
+<img src="code_snippets/code9.PNG">
 <p>JavaScript function that displays synopsis once event listener is triggered. Capturing the current scroll position, when synopsis finally loads the page will stay in its current position so user won't have to scroll back down.
-<img src="code_snippets/code10">
+<img src="code_snippets/code10.PNG">
 
 
-<h4>Front End</h4>
+<h4 id="fe">Front End</h4>
 <p>To add more user functionality I created buttons that would sort collection by title, demographic, and author. User can also use a search form to find a specific title, displaying an individual card.</p>
-<img src="code_snippets/code8">
-<p>Index container styled with <a href="">CSS</a> animation.</p>
-<img src="code_snippets/code11">
-<p>List and links styled with <a href="">CSS</a> animation.</p>
-<img src="code_snippets/code12">
+<img src="code_snippets/code8.PNG">
+<p>Index container styled with <a href="css/styling.css">CSS</a> animation.</p>
+<img src="code_snippets/code11.PNG">
+<p>List and links styled with <a href="css/styling.css">CSS</a> animation.</p>
+<img src="code_snippets/code12.PNG">
 
-<h4>Additional Skills:</h4>
+<h4 id="as">Additional Skills:</h4>
 <ul>
   <li>Live Setting: Working alongside other developers and utilizng different applications to communicate and update project. Overall project flow: assigned stories, version control/branching/merging, stand-ups, sprint meetings/review, etc.</li>
   <li>Advanced Coding: Researching and self-teaching new and advanced coding. Exhausting all resources to achieve end goal.</li>
