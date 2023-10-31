@@ -36,7 +36,7 @@ The initial steps of this project were applying basic CRUD operations to MyManga
 <img src="code_snippets/code7.PNG">
 <p>On the front-end  a drop down menu gives user category options to search API. Results will then be displayed on a list. When clicked, list items corresponding synopsis is displayed.</p>
 <img src="code_snippets/code9.PNG">
-<p>JavaScript function that displays synopsis once event listener is triggered. Capturing the current scroll position, when synopsis finally loads the page will stay in its current position so user won't have to scroll back down.
+<p>JavaScript function that displays synopsis once event listener is triggered. Capturing the current scroll position, when synopsis finally loads the page will stay in its current position so user won't have to scroll back down.</p>
 <img src="code_snippets/code10.PNG">
 
 
