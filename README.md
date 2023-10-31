@@ -1,8 +1,8 @@
 # Live-Project
 <h3> Introduction</h3>
-<p> For this project I was tasked with developing a web application for a hobbiest to store a collection of things as well as relating API and data scraped. When creating this project I wanted a place for manga enthusiast to digitally store their collection, include details on those mangas, and display their covers. My Manga came forth from those ideas as well as data scraping for covers so the user would have a source to search from for their collection. The API searches based upon category giving the user the ability to find new mangas for their collection.
+<p> For this project I was tasked with developing a web application for a hobbiest to store a collection of things as well as relating API and data scraped. When creating this project I wanted a place for manga enthusiast to digitally store their collection, including details, and covers. My Manga was developed with those ideas in mind, as well as data scraping for covers to be utilized by users. Through the connected API, users can find their next manga filtering search results by category and displaying corresponding synopsis.
 
-The initial steps of this project were giving MyManga basic CRUD operations. The user can CREATE a record of a manga adding it to a database with the user panel. Through the collection page the user can READ those details in the form of bootstrap cards. Each card has a button with EDIT and DELETE functionality. Using BeautifulSoup cover images were scraped from Anilist for users to utilize as cover sources. I connected to Kitsu's API giving the user the ability to search for mangas. A dropdown menu with category options specifies results.
+The initial steps of this project were applying basic CRUD operations to MyManga interface. The user can CREATE a record of a manga adding it to a database with the user panel. Through the collection page the user can READ those details in the form of bootstrap cards. Each card has a button with EDIT and DELETE functionality. Using BeautifulSoup cover images were scraped from Anilist for users to utilize as cover sources. I connected to Kitsu's API giving the user the ability to search for mangas. A dropdown menu with category options specifies results.
 
 <h3>Project Stories</h3>
 <ol>
@@ -22,19 +22,19 @@ The initial steps of this project were giving MyManga basic CRUD operations. The
 <img src="code_snippets/code3.PNG">
 
 <h4>Update & Delete</h4>
-<p>Update button renders a details page where user can update database object. Using pk to display info from card that called funtion. The delete function initiates the confirm delete function ensuring the user doesn't accidentaly delete from the db. On successful deleteing user is returned to collection page.</p>
+<p>Update button renders a details page where user can update database object. Pk is used to display the details of the card that called UPDATE or DELETE function. Delete function initiates the confirm delete function ensuring the user doesn't accidentaly delete an object. On successful deletion user is returned to collection page.</p>
 <img src="code_snippets/code2.PNG">
 
 <h4 id="ds">Data Scraping</h4>
-<p>Using BeautifulSoup to datascrape, I requested anilists webpage and parsed throgh the raw HTML. From the data I pulled objects with attributes class 'image' and created a dictionary with key 'source' containing object URLs.. I then linked and displayed on an HTML page.</p>
+<p>Using BeautifulSoup to datascrape, I requested anilists webpage and parsed throgh the raw HTML. From the data I pulled objects with attributes class 'image' and created a dictionary with key 'source' containing object URLs. Data is then linked and displayed on HTML page.</p>
 <img src="code_snippets/code5.PNG">
 
 <h4 id="api">API</h4>
 <p>This function requests the URL for chosen API by selected category. Based upon the paramaters, JSON response is stored in object manga_data.</p>
 <img src="code_snippets/code6.PNG">
-<p>If there's data it's extracted into manga_list. For each manga (matching our paramaters), the corresponding attribute 'synopsis' is also pulled and stored. Error handling if there is no synopsis or manga data. Information is then rendered to linked HTML page.</p>
+<p>If there's data it's extracted into manga_list. For each manga (matching paramaters), the corresponding attribute 'synopsis' is also pulled and stored. Error handling if there is no synopsis or manga data. Information is then rendered to linked HTML page.</p>
 <img src="code_snippets/code7.PNG">
-<p>On the front-end I created a drop down menu for user to search API based on category. Results will then be displayed on a list. If the user clicks on list item corresponding synopsis is displayed.</p>
+<p>On the front-end  a drop down menu gives user category options to search API. Results will then be displayed on a list. When clicked, list items corresponding synopsis is displayed.</p>
 <img src="code_snippets/code9.PNG">
 <p>JavaScript function that displays synopsis once event listener is triggered. Capturing the current scroll position, when synopsis finally loads the page will stay in its current position so user won't have to scroll back down.
 <img src="code_snippets/code10.PNG">
@@ -57,7 +57,8 @@ The initial steps of this project were giving MyManga basic CRUD operations. The
 
 <h4 id="challenges">Challenges</h4>
 <ul>
-<li>Advanced coding conepts such as datascraping and API were unknown to me at the start of this project. There was definitley pressure having to teach myself these concepts in a timely manner for the first time. Utilizing online resources, our communication platform, and other developers/project instructors helped me overcome this challenge.</li>
+<li>Advanced coding conepts such as datascraping and API were unknown to me at the start of this project. There was pressure having to teach myself these concepts in a timely manner for the first time. Utilizing online resources, our communication platform, and other developers/project instructors helped me overcome this challenge.</li>
 <li>Developing a web application of this size and complexity was a first for me. Taking the time to map out how I wanted my pages to look and functionality required to accomplish tasks, I was able to break things down into simple steps completeing one at a time returning desired results.</li>
+<li>When problem solving I had to find creative solutions and be willing to pivot as needed. Facing roadblocks, I had to find another way to accomplish the same end result and realize my first idea isn't always the best. </li>
 </ul>
 
